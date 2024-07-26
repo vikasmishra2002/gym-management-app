@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gym"
+    tools:context=".AdminAnnouncementsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_start"
+        android:layout_marginTop="@dimen/card_top"
+        android:layout_marginEnd="@dimen/card_end"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Heading EditText -->
+            <EditText
+                android:id="@+id/etAdminAnnouncementsHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Heading"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+
+            <!-- Description EditText -->
+            <EditText
+                android:id="@+id/etAdminAnnouncementsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/view_padding"
+                android:importantForAutofill="no" />
+
+
+            <Button
+                android:id="@+id/btAdminAnnouncements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginBottom="@dimen/view_bottom"
+                android:background="@drawable/btn_shape_round"
+                android:text="Send" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
